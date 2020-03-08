@@ -11,7 +11,7 @@
 
 Run tests: `npm test`
 
-##### Run the application Docker
+#### Run the application Docker
 
 1. Make sure you have installed [Docker](https://www.docker.com/)
 2. Run `npm run build:image` to create a docker image named _origo-bysykkel_
