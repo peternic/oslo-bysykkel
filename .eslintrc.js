@@ -7,7 +7,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
   ],
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'jest'],
   parser: '@typescript-eslint/parser',
   settings: {
     react: {
@@ -22,6 +22,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    'jest/globals': true,
   },
   rules: {
     'prettier/prettier': 'error',
@@ -32,6 +33,12 @@ module.exports = {
       files: ['**/*.tsx'],
       rules: {
         'react/prop-types': 'off',
+      },
+    },
+    {
+      files: ['**/*.spec.ts'],
+      rules: {
+        '@typescript-eslint/camelcase': 'off',
       },
     },
   ],
