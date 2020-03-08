@@ -43,4 +43,9 @@ describe('dataMerger', () => {
       },
     ]);
   });
+
+  it('shall handle empyt objects', () => {
+    const result: Array<Station> = merge([], []);
+    expect(result).toMatchObject([]);
+  });
 });

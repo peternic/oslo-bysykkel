@@ -4,6 +4,9 @@ const merge = (
   stations: Array<StationInformation>,
   statusStations: Array<StatusStation>
 ): Array<Station> => {
+  if (!statusStations || statusStations.length === 0) {
+    return [];
+  }
   return stations?.map(station => {
     return Object.assign(
       {},
