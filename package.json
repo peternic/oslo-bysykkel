@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "eslint src/**/*.ts*",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build:image": "docker build -t origo-bysykkel .",
+    "start:image": "docker run -it -p 3000:3000 origo-bysykkel"
   },
   "keywords": [],
   "author": "",
