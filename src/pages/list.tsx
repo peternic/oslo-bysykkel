@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import React from 'react';
 import { Station } from '../types';
 import fetchBikeData from '../service/service';
-import StationView from '../components/stationView';
+import StationListView from '../components/stationListView';
 
 interface Props {
   result: Array<Station>;
@@ -10,7 +10,7 @@ interface Props {
 
 const App: NextPage<Props> = ({ result }) => {
   const stations = result.map((it: Station) => (
-    <StationView station={it} key={it.station_id} />
+    <StationListView station={it} key={it.station_id} />
   ));
   return (
     <>
