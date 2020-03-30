@@ -7,7 +7,7 @@ interface Props {
 
 const StationView: React.FC<Props> = ({ station }) => {
   return (
-    <div>
+    <div data-testid={`stationView-${station.station_id}`}>
       <table>
         <thead>
           <tr>

@@ -26,10 +26,10 @@ const MapView: React.FC<Props> = ({ stations }) => {
             iconAnchor: [12.5, 36],
             className: 'leaflet-div-icon arrow_box',
             html: `
-                    <table class="statusTable">
+                    <table class="statusTable" data-testid="mapMarker-${station.station_id}">
                       <tr>
-                        <td class="${bikesAvailableClass}">${station.num_bikes_available}</td>
-                        <td class="${docksAvailableClass}">${station.num_docks_available}</td>
+                        <td class="${bikesAvailableClass}" data-testid="markerBikesAvailable">${station.num_bikes_available}</td>
+                        <td class="${docksAvailableClass}" data-testid="markerDocksAvailable">${station.num_docks_available}</td>
                       </tr>
                     </table>
                    `,

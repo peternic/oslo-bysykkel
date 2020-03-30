@@ -7,9 +7,17 @@
 1. Install dependencies: `npm install`
 2. Dev mode: `npm run dev` Then open the application at `http://localhost:3000`
 
-#### Run tests
+#### Run unit tests
 
-Run tests: `npm test`
+Run tests: `npm run test`
+
+#### Run feature tests
+
+Application is using [Cypress](https://www.cypress.io/) for functional testing.
+
+Run featureTests: `npm run featureTest`
+
+This command will run a express devserver with mock data on port 4000 (by default), and start the Nextjs app on port 3000, and start the Cypress tests.
 
 #### Run the application Docker
 
