@@ -36,7 +36,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.spec.ts'],
+      files: ['**/*.spec.ts', '**/*.spec.tsx'],
       rules: {
         '@typescript-eslint/camelcase': 'off',
       },

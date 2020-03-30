@@ -1,0 +1,48 @@
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+.map-root {
+  height: 90vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow_box {
+  border-radius: 5px;
+  border: 1px solid #4f565f;
+}
+
+.arrow_box:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 99, 251, 0);
+  border-top-color: #4f565f;
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.statusTable {
+  width: 100%;
+  height: 100%;
+}
+
+.statusTable td {
+  width: 17px;
+  text-align: center;
+  border: 1px solid #4f565f;
+}
